@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>PlayTime - Gerador de Times</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p class="teste">Grandão da galileia</p>
+
+  <div class="container">
+    <h1>⚽ PlayTime</h1>
+
+    <select id="esporte">
+      <option value="futebol">Futebol</option>
+      <option value="volei">Vôlei</option>
+      <option value="basquete">Basquete</option>
+    </select>
+
+    <input type="text" id="jogador" placeholder="Nome do jogador">
+    <button onclick="adicionarJogador()">Adicionar</button>
+
+    <ul id="listaJogadores"></ul>
+
+    <input type="number" id="tamanhoTime" placeholder="Jogadores por time">
+
+    <button class="gerar" onclick="gerarTimes()">Gerar Times</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
